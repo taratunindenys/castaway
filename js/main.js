@@ -1,3 +1,9 @@
+const menuBtn = document.querySelector('.menu__btn');
+const menuMobile = document.querySelector('.header__menu-list');
+
+menuBtn.addEventListener('click',()=>{menuMobile.classList.toggle('menu--open');});
+
+// carusel
 window.addEventListener('load', function() {
     carouselRUN();
 }, false);
@@ -61,3 +67,4 @@ function carouselRUN() {
         }, true);
     }
 }
+
